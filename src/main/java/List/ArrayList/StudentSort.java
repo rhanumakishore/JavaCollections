@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+/* ArrayList sorting example using Comparable*/
 public class StudentSort  {
 
     public static void main(String args[]){

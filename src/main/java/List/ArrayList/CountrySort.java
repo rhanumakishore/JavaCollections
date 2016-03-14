@@ -2,7 +2,8 @@ package main.java.List.ArrayList;
 
 import java.util.*;
 
-public class CountrySort implements Comparable<CountrySort> {
+/* ArrayList Sorting example using Comparator */
+public class CountrySort {
 
     int id;
     String countryName;
@@ -65,10 +66,5 @@ public class CountrySort implements Comparable<CountrySort> {
 
     }
 
-
-
-    public int compareTo(CountrySort country) {
-        //Country country  = (Country) o;
-        return this.id - country.id;
-    }
+   
 }
