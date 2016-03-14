@@ -32,29 +32,29 @@ public class CountrySort implements Comparable<CountrySort> {
         list.add(nepalCountry);
         list.add(bhutanCountry);
 
-        /*Comparator idComparator = new Comparator<Country>() {
-            public int compare(Country o1, Country o2) {
+        Comparator idComparator = new Comparator<CountrySort>() {
+            public int compare(CountrySort o1, CountrySort o2) {
                 return o1.id - o2.id;
             }
         };
 
-        Comparator nameComparator = new Comparator<Country>() {
-            public int compare(Country o1, Country o2) {
+        /*Comparator nameComparator = new Comparator<CountrySort>() {
+            public int compare(CountrySort o1, CountrySort o2) {
                 return o2.countryName.compareTo(o1.countryName);
             }
-        };*/
+        };
 
         
-        /*Collections.sort(list, new Comparator<Country>()
+        Collections.sort(list, new Comparator<CountrySort>()
         {
 
-            public int compare(Country o1, Country o2) {
+            public int compare(CountrySort o1, CountrySort o2) {
                 return o1.id - o2.id;
             }
         }
         );*/
 
-        Collections.sort(list);
+        Collections.sort(list, idComparator);
 
         Iterator iter = list.iterator();
         while(iter.hasNext())
