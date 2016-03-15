@@ -29,7 +29,7 @@ public class HashMapExample {
 
       /* Get values based on key*/
       String var= hmap.get(2);
-      System.out.println("Value at index 2 is: "+var);
+      System.out.println("Value of key 2 is: "+var);
 
       /* Remove values based on key*/
       hmap.remove(3);
